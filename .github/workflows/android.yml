@@ -29,5 +29,10 @@ jobs:
           mkdir -p app
           cp /tmp/g.json app/google-services.json
 
+      - name: Create google-services.json
+        run: |
+          mkdir -p app
+          echo "${{ secrets.GOOGLE_SERVICES_JSON }}" > app/google-services.json
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
