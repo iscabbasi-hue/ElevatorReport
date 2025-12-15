@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030726213520",
+    "project_id": "mahestancrm",
+    "storage_bucket": "mahestancrm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030726213520:android:cc574c07c85203bd1cdd15",
+        "android_client_info": {
+          "package_name": "com.example.elevatorrportmahestan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtyoEzlxaJMNn3OGWzqPDk5THiz6NKwB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
