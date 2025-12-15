@@ -12,6 +12,7 @@ import com.example.elevatorrportmahestan.model.ReportStatus
 import com.example.elevatorrportmahestan.storage.PendingReportStorage
 import com.example.elevatorrportmahestan.data.worker.enqueueReportSync
 import java.util.UUID
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseAuth.getInstance()
+
         setContentView(R.layout.activity_main)
 
         etErrorCode = findViewById(R.id.etErrorCode)

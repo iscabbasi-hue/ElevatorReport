@@ -1,27 +1,21 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/")
         gradlePluginPortal()
+        mavenCentral()
     }
 }
+
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
+        maven("https://maven.aliyun.com/repository/google")
+        maven("https://maven.aliyun.com/repository/public")
         mavenCentral()
-
     }
 }
-
-
-
 
 rootProject.name = "ElevatorRportMahestan"
 include(":app")
